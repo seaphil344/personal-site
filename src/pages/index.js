@@ -1,4 +1,5 @@
 import Head from "next/head";
+import ProjectCard from "@/components/ProjectCard";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
@@ -6,12 +7,12 @@ import {
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
-import deved from "../../public/dev-ed-wave.png";
+import camAvatar from "../../public/camAvatar.png";
 import code from "../../public/code.png";
-import design from "../../public/design.png";
-import consulting from "../../public/consulting.png";
+import framework from "../../public/framework.png";
+import technology from "../../public/technology.png";
 import Image from "next/image";
-import Legacyimage from "next/legacy/image";
+import LegacyImage from "next/legacy/image";
 import web1 from "../../public/web1.png";
 import web2 from "../../public/web2.png";
 import web3 from "../../public/web3.png";
@@ -48,7 +49,6 @@ export default function Home() {
                   Resume
                 </a>
               </li>
-              
             </ul>
           </nav>
           <div className="text-center p-10 py-10">
@@ -60,15 +60,15 @@ export default function Home() {
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Freelancer providing services for programming and design content
-              needs. Join me down below and let's get cracking!
+              needs.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <AiFillTwitterCircle />
               <AiFillLinkedin />
               <AiFillYoutube />
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} fill objectFit="cover" />
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-96 h-96 relative overflow-hidden mt-20 md:h-96 md:w-96">
+              <Image src={camAvatar} fill objectFit="cover" />
             </div>
           </div>
         </section>
@@ -76,12 +76,10 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Skills and Experience</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
+            Hi, I'm a freelance web developer and mechanical engineer with a passion for bringing ideas to life. With a strong background in 
+            both fields, I bring a unique perspective and skillset to every project I work on. Whether it's building a responsive website from scratch 
+            or designing a complex mechanical system, I approach every task with attention to detail, precision, and a focus on creating solutions that 
+            meet my clients' needs. 
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I offer from a wide range of services, including brand design,
@@ -90,44 +88,35 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Legacyimage src={design} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Development
+              <LegacyImage src={code} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2 text-teal-600">
+                Languages
               </h3>
-              <p className="py-2">
-                These are some of the development tools I use
-              </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">VS Code</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
-                Engineering Skills
-              </h3>
-              <p className="py-2">
-                These are some of my Engineering Skills
-              </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Fusion360</p>
+              <p className="text-gray-800 py-1">Javascript</p>
+              <p className="text-gray-800 py-1">Python</p>
+              <p className="text-gray-800 py-1">C</p>
+              <p className="text-gray-800 py-1">HTML</p>
               <p className="text-gray-800 py-1">Matlab</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Other Stuff</h3>
-              <p className="py-2">
-                This is some other stuff that I can do
-              </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
+              <LegacyImage src={framework} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2 text-teal-600">
+                Frameworks and Databases
+              </h3>
+              <p className="text-gray-800 py-1">React</p>
+              <p className="text-gray-800 py-1">MongoDB</p>
+              <p className="text-gray-800 py-1">NodeJS/Express</p>
+              <p className="text-gray-800 py-1">Tailwind</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+              <LegacyImage src={technology} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2 text-teal-600">Technologies and Engineering Skills</h3>
+
+              <p className="text-gray-800 py-1">Git</p>
+              <p className="text-gray-800 py-1">Fusion360</p>
+              <p className="text-gray-800 py-1">Bubble</p>
               <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <p className="text-gray-800 py-1">Wordpress</p>
             </div>
           </div>
         </section>
@@ -135,21 +124,12 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Featured Projects</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+              Here are some of my favorite projects I've done over the years. Take a look at some of these projects that showcase my various skills. 
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
-              <Legacyimage
+              <LegacyImage
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
@@ -158,7 +138,7 @@ export default function Home() {
               />
             </div>
             <div className="basis-1/3 flex-1">
-              <Legacyimage
+              <LegacyImage
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
@@ -167,7 +147,7 @@ export default function Home() {
               />
             </div>
             <div className="basis-1/3 flex-1">
-              <Legacyimage
+              <LegacyImage
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
@@ -176,7 +156,7 @@ export default function Home() {
               />
             </div>
             <div className="basis-1/3 flex-1">
-              <Legacyimage
+              <LegacyImage
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
@@ -185,7 +165,7 @@ export default function Home() {
               />
             </div>
             <div className="basis-1/3 flex-1">
-              <Legacyimage
+              <LegacyImage
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
@@ -194,7 +174,7 @@ export default function Home() {
               />
             </div>
             <div className="basis-1/3 flex-1">
-              <Legacyimage
+              <LegacyImage
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
@@ -202,6 +182,14 @@ export default function Home() {
                 src={web6}
               />
             </div>
+            <ProjectCard/>
+            <ProjectCard />
+          </div>
+        </section>
+        <section>
+          <div className="py-10 dark:text-white">
+            <h3 className="text-3xl pb-5 dark:text-white">Contact Me</h3>
+            <p>Whether its about working on a new project, consulting on somehthing, or just saying hi I'd love to hear from you</p>
           </div>
         </section>
       </main>
