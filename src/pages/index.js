@@ -1,9 +1,8 @@
 import Head from "next/head";
 import ProjectCard from "@/components/ProjectCard";
 import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillYoutube,
+  AiFillGithub,
+  AiFillMail
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
@@ -62,11 +61,6 @@ export default function Home() {
               Freelancer providing services for programming and design content
               needs.
             </p>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
-              <AiFillLinkedin />
-              <AiFillYoutube />
-            </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-96 h-96 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={camAvatar} fill objectFit="cover" />
             </div>
@@ -187,10 +181,14 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className="py-10 dark:text-white">
+          <div className="py-5 dark:text-white">
             <h3 className="text-3xl pb-5 dark:text-white">Contact Me</h3>
             <p>Whether its about working on a new project, consulting on somehthing, or just saying hi I'd love to hear from you</p>
           </div>
+          <div className="text-5xl flex justify-center gap-16 py-3 pb-5 text-gray-600 dark:text-gray-400">
+              <AiFillMail />
+              <AiFillGithub />
+            </div>
         </section>
       </main>
     </div>
