@@ -52,7 +52,7 @@ export default function Home({ data }) {
               Cameron Philbert
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Mechanical Engineer and Software Developer.
+              Mechanical Engineer and Software Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Freelancer providing services for programming and design content
@@ -118,7 +118,7 @@ export default function Home({ data }) {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Featured Projects</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Here are some of my favorite projects I've done over the years. Take a look at some of these projects that showcase my various skills. 
+            Check out these cool projects I've worked on over the years! Take a peek at some of the stuff that shows off what I can do. 
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -130,11 +130,15 @@ export default function Home({ data }) {
         <section>
           <div className="py-5 dark:text-white">
             <h3 className="text-3xl pb-5 dark:text-white">Contact Me</h3>
-            <p>Whether its about working on a new project, consulting on somehthing, or just saying hi I'd love to hear from you</p>
+            <p>Whether you're looking to collaborate on a new project, seeking some expert advice, or just want to drop a friendly "hello," I'm excited to connect with you.</p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 pb-5 text-gray-600 dark:text-gray-400">
-              <AiFillMail />
-              <AiFillGithub />
+              <a href="mailto:camphildev@gmail.com">
+                <AiFillMail />
+              </a>
+              <a href="https://github.com/seaphil344">
+                <AiFillGithub />
+              </a>
             </div>
         </section>
       </main>
