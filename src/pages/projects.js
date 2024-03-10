@@ -59,7 +59,7 @@ export default function Home({ data }) {
   
   export async function getServerSideProps() {
     // Replace this URL with the API endpoint you want to fetch data from.
-    const apiUrl = 'http://localhost:3000/projects';
+    const apiUrl = 'http://localhost:3000/api/projects';
   
     const res = await fetch(apiUrl);
     const data = await res.json();

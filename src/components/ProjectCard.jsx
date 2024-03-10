@@ -32,6 +32,12 @@ export default function ProjectCard({ project }) {
             borderRadius: '10px',
         }
         : {};
+    
+    // Function to format the date
+    const formatDate = (dateString) => {
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        return new Date(dateString).toLocaleDateString(undefined, options);
+    };
 
     return (
         <>
@@ -69,6 +75,7 @@ export default function ProjectCard({ project }) {
                     </div>
                     <div className="mt-4 text-center text-gray-600">
                         <p className="font-semibold">Creation Date</p>
+                        {formatDate(project.creationDate)}
                     </div>
                     <div className="flex justify-center mt-4">
                         <button className="px-4 py-2 mr-4 text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none">
