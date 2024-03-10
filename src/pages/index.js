@@ -55,8 +55,8 @@ export default function Home({ data }) {
               Mechanical Engineer and Software Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Freelancer providing services for programming and design content
-              needs.
+              Blending Mechanical Engineering Expertise with Cutting-Edge Software Development
+              Discover bespoke solutions tailored to your programming and design aspirations with a seasoned freelancer at your service.
             </p>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-96 h-96 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={camAvatar} fill />
@@ -68,10 +68,11 @@ export default function Home({ data }) {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Skills and Experience</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Hi, I'm a freelance web developer and mechanical engineer with a passion for bringing ideas to life. With a strong background in 
-              both fields, I bring a unique perspective and skillset to every project I work on. Whether it's building a responsive website from scratch 
-              or designing a complex mechanical system, I approach every task with attention to detail, precision, and a focus on creating solutions that 
-              meet my clients' needs. 
+            Greetings! I'm Cameron, your go-to freelance innovator at the nexus of mechanical engineering and web development. 
+            Fueled by a relentless passion to transform visions into reality, I merge analytical engineering methodologies with 
+            dynamic programming prowess. From sculpting intricate mechanical systems to architecting user-centric websites, my 
+            mission is to engineer bespoke solutions that resonate with your objectives, ensuring meticulous attention to detail 
+            and unwavering dedication to excellence.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I offer from a wide range of services, including brand design,
@@ -118,7 +119,11 @@ export default function Home({ data }) {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Featured Projects</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            Check out these cool projects I've worked on over the years! Take a peek at some of the stuff that shows off what I can do. 
+            Dive into My Portfolio: A Showcase of Ingenuity and Expertise
+            Embark on a journey through a curated selection of my most impactful 
+            projects, each a testament to my interdisciplinary approach and commitment 
+            to innovation. Discover how I've harnessed the power of engineering and 
+            technology to solve real-world challenges and create value.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
